@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="idDialog" title="Filter">
+		<f:SimpleForm>
+		
+		<Label text='From' labelFor="DP10"/>
+		<DatePicker
+			id="DP10"
+			value=""
+			displayFormat="dd/MM/yyyy"
+			valueFormat="MM/dd/yyyy"
+			change="handleChange"
+			class="sapUiSmallMarginBottom"
+			width="300px"
+			/>
+		<Label text='To' labelFor="DP11"/>
+		<DatePicker
+			id="DP11"
+			value=""
+			displayFormat="dd/MM/yyyy"
+			valueFormat="MM/dd/yyyy"
+			change="handleChange"
+			class="sapUiSmallMarginBottom"
+			width="300px"
+			/>
+		</f:SimpleForm>
+		<Toolbar>
+			<ToolbarSpacer/>
+			<Button id="ProceedButton" text="Proceed" press="onFilterProceed"/>
+			<Button id="CancelButton" text="Cancel"/>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>

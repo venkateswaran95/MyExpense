@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="idDialog" title="Expense Category">
+		<f:SimpleForm>
+		<Label text="Transport and Petrol"/>
+			<Text id="idPetrol" />
+			<Label text="Grocery items"/>
+			<Text id="idGrocery" />
+			<Label text="Vegetable"/>
+			<Text id="idVegetable" />
+			<Label text="Snacks"/>
+			<Text id="idSnacks" />
+			<Label text="Rent + Gas + Milk"/>
+			<Text id="idRgm" />
+			<Label text="Others"/>
+			<Text id="idOthers" />
+			<Label text="Total"/>
+			<Text id="idTotal" />
+		</f:SimpleForm>
+		<Toolbar>
+			<ToolbarSpacer/>
+		
+			<Button id="CancelButton" text="Cancel"/>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>

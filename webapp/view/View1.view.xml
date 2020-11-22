@@ -1,0 +1,63 @@
+<mvc:View controllerName="MyExpense.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page title="{i18n>title}" id="idPage" class="sapUiResponsivePadding">
+				<customHeader>
+					<Bar>
+					<contentRight>
+						<Button text="Refresh" icon="sap-icon://synchronize" press="loadModelData"/>
+					</contentRight>
+					<contentLeft>
+						<Text text="" id="idSum"/>
+					</contentLeft>
+					</Bar>
+				</customHeader>
+				<content>
+					<Table noDataText="No data" id="idTable">
+						<columns>
+							<Column id="c1">
+								<header>
+									<Label text="Expense Type"/>
+								</header>
+							</Column>
+								<Column id="c2">
+								<header>
+									<Label text="Amount"/>
+								</header>
+							</Column>
+								<Column id="c3">
+								<header>
+									<Label text="Comment"/>
+								</header>
+							</Column>
+								<Column id="c4">
+								<header>
+									<Label text="Date"/>
+								</header>
+							</Column>
+								<Column id="c5">
+								<header>
+									<Label text="Time Stamp"/>
+								</header>
+							</Column>
+					
+						</columns>
+
+					</Table>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button icon="sap-icon://create" text="Create" press="onCreate"/>
+							<Button icon="sap-icon://monitor-payments" text="Category" press="onShowCategory"/>
+							<Button icon="sap-icon://filter" text="Filter" press="filterData"/>
+							<Button icon="sap-icon://throughput-backlog" text="Chart" press="showDonutChart"/>
+					
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

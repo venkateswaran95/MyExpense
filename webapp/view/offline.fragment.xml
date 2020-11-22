@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="idDialog" title="Filter">
+		<Text
+			id="offlineText" text="Offline Check your internet connection" ></Text>
+		
+		<Toolbar>
+			<ToolbarSpacer/>
+			
+			<Button id="reloadButton" text="Reload" />
+		
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>
