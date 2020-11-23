@@ -36,6 +36,7 @@ sap.ui.define([
 			d = new Date();
 
 			var oModel = new sap.ui.model.json.JSONModel();
+			console.log("After Rebase");
 <<<<<<< Upstream, based on 02e81b27a57e8a1b2f92f3ece33b92e506430b78
 			oModel.loadData("https://spreadsheets.google.com/feeds/cells/1nwxMRHDhWXqvSW6TwTb1p3bKSI3yoWrcdVnREt_Eg1U/1/public/full?alt=json");
 			this.getView().setModel(oModel);
