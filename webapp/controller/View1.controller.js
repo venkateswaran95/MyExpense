@@ -38,7 +38,7 @@ sap.ui.define([
 			var oModel = new sap.ui.model.json.JSONModel();
 			console.log("After Rebase");
 <<<<<<< Upstream, based on 02e81b27a57e8a1b2f92f3ece33b92e506430b78
-			oModel.loadData("https://spreadsheets.google.com/feeds/cells/1nwxMRHDhWXqvSW6TwTb1p3bKSI3yoWrcdVnREt_Eg1U/1/public/full?alt=json");
+			oModel.loadData("");
 			this.getView().setModel(oModel);
 			oModel.attachRequestCompleted(function(oEvent) {
 				//	console.log(this.oData.feed.entry);
@@ -254,7 +254,7 @@ sap.ui.define([
 			sap.ui.core.BusyIndicator.hide();
 		},
 		onCreate: function(){
-			window.open("https://docs.google.com/forms/d/e/1FAIpQLSd6wH53MLqgybGLqRG9jZsYVThfu98VkQ5LAKHE3q0KHcl1Yw/viewform?usp=pp_url&entry.245241149=-","_blank");
+			window.open("");
 =======
 			oModel.loadData("");
 			this.getView().setModel(oModel);
